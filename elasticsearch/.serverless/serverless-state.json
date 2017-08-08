@@ -1,0 +1,163 @@
+{
+  "service": {
+    "service": "elasticsearch",
+    "serviceObject": {
+      "name": "elasticsearch"
+    },
+    "provider": {
+      "stage": "dev",
+      "region": "us-east-1",
+      "variableSyntax": "\\${([ ~:a-zA-Z0-9._,\\-\\/\\(\\)]+?)}",
+      "name": "aws",
+      "runtime": "python3.6",
+      "role": "arn:aws:iam::063414442810:role/serverless-lambda-full",
+      "versionFunctions": true,
+      "remoteFunctionData": null,
+      "compiledCloudFormationTemplate": {
+        "AWSTemplateFormatVersion": "2010-09-09",
+        "Description": "The AWS CloudFormation template for this Serverless application",
+        "Resources": {
+          "ServerlessDeploymentBucket": {
+            "Type": "AWS::S3::Bucket"
+          },
+          "EsUnderscoreprocessLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/elasticsearch-dev-es_process"
+            }
+          },
+          "EsUnderscoreprocessLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": {
+                  "Ref": "ServerlessDeploymentBucket"
+                },
+                "S3Key": "serverless/elasticsearch/dev/1502163724412-2017-08-08T03:42:04.412Z/elasticsearch.zip"
+              },
+              "FunctionName": "elasticsearch-dev-es_process",
+              "Handler": "es_handler.process_stream",
+              "MemorySize": 1024,
+              "Role": "arn:aws:iam::063414442810:role/serverless-lambda-full",
+              "Runtime": "python3.6",
+              "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "ES_ENDPOINT": "ec2-13-58-174-196.us-east-2.compute.amazonaws.com:9200",
+                  "REGION": "us-east-1"
+                }
+              }
+            },
+            "DependsOn": [
+              "EsUnderscoreprocessLogGroup"
+            ]
+          },
+          "EsUnderscoreprocessLambdaVersion9J0oECh6xZFh4SP6vfRgTXO7oBIViSDOu0LQlmBHXg": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "EsUnderscoreprocessLambdaFunction"
+              },
+              "CodeSha256": "9+J0oECh6xZFh4SP6vfRgTXO7oBIViSDOu0LQlmBHXg="
+            }
+          },
+          "EsUnderscoreprocessEventSourceMappingDynamodbArticles": {
+            "Type": "AWS::Lambda::EventSourceMapping",
+            "DependsOn": [],
+            "Properties": {
+              "BatchSize": 10,
+              "EventSourceArn": "arn:aws:dynamodb:us-east-1:063414442810:table/articles/stream/2017-08-07T20:36:30.843",
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "EsUnderscoreprocessLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "StartingPosition": "TRIM_HORIZON",
+              "Enabled": "True"
+            }
+          },
+          "EsUnderscoreprocessEventSourceMappingKinesisArticles": {
+            "Type": "AWS::Lambda::EventSourceMapping",
+            "DependsOn": [],
+            "Properties": {
+              "BatchSize": 10,
+              "EventSourceArn": "arn:aws:kinesis:us-east-1:063414442810:stream/articles",
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "EsUnderscoreprocessLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "StartingPosition": "TRIM_HORIZON",
+              "Enabled": "True"
+            }
+          }
+        },
+        "Outputs": {
+          "ServerlessDeploymentBucketName": {
+            "Value": {
+              "Ref": "ServerlessDeploymentBucket"
+            }
+          },
+          "EsUnderscoreprocessLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "EsUnderscoreprocessLambdaVersion9J0oECh6xZFh4SP6vfRgTXO7oBIViSDOu0LQlmBHXg"
+            }
+          }
+        }
+      },
+      "coreCloudFormationTemplate": {
+        "AWSTemplateFormatVersion": "2010-09-09",
+        "Description": "The AWS CloudFormation template for this Serverless application",
+        "Resources": {
+          "ServerlessDeploymentBucket": {
+            "Type": "AWS::S3::Bucket"
+          }
+        },
+        "Outputs": {
+          "ServerlessDeploymentBucketName": {
+            "Value": {
+              "Ref": "ServerlessDeploymentBucket"
+            }
+          }
+        }
+      },
+      "vpc": {}
+    },
+    "custom": {
+      "ES_ENDPOINT": "ec2-13-58-174-196.us-east-2.compute.amazonaws.com:9200",
+      "REGION": "us-east-1"
+    },
+    "plugins": [
+      "serverless-python-requirements"
+    ],
+    "functions": {
+      "es_process": {
+        "handler": "es_handler.process_stream",
+        "events": [
+          {
+            "stream": "arn:aws:dynamodb:us-east-1:063414442810:table/articles/stream/2017-08-07T20:36:30.843"
+          },
+          {
+            "stream": "arn:aws:kinesis:us-east-1:063414442810:stream/articles"
+          }
+        ],
+        "environment": {
+          "ES_ENDPOINT": "ec2-13-58-174-196.us-east-2.compute.amazonaws.com:9200",
+          "REGION": "us-east-1"
+        },
+        "name": "elasticsearch-dev-es_process",
+        "package": {},
+        "vpc": {}
+      }
+    },
+    "artifact": "/Users/rfoster/development/workspace/yonathan/dynamodb-elasticsesarch/elasticsearch/.serverless/elasticsearch.zip"
+  },
+  "package": {
+    "artifactDirectoryName": "serverless/elasticsearch/dev/1502163724412-2017-08-08T03:42:04.412Z",
+    "artifact": "elasticsearch.zip"
+  }
+}

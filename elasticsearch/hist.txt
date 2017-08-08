@@ -1,0 +1,1000 @@
+   69  07:18:2017:22:59:25 git commit -am "add files from upstream"
+   70  07:18:2017:22:59:40 git fetch
+   71  07:18:2017:22:59:44 git pull
+   72  07:18:2017:22:59:49 git push
+   73  07:18:2017:22:59:52 ls
+   74  07:18:2017:22:59:54 cd ..
+   75  07:18:2017:22:59:55 ls
+   76  07:18:2017:22:59:56 cd ..
+   77  07:18:2017:22:59:57 ls
+   78  07:18:2017:23:00:01 cd services/
+   79  07:18:2017:23:00:01 ls
+   80  07:18:2017:23:00:09 rm dynamoDownload.sh.bak 
+   81  07:18:2017:23:00:47 git commit -am "rm dynamDownload.sh"
+   82  07:18:2017:23:01:06 ls
+   83  07:18:2017:23:01:10 git add --all
+   84  07:18:2017:23:01:24 git commit -am "add restructured dirs"
+   85  07:18:2017:23:01:46 drm __pycache__/
+   86  07:18:2017:23:01:53 drm example.log 
+   87  07:18:2017:23:02:12 drm ../datafactory/python/datafactory/dynamodb/__pycache__/
+   88  07:18:2017:23:02:21 git commit -am "remove misc files"
+   89  07:18:2017:23:02:27 git push
+   90  07:18:2017:23:02:30 ls
+   91  07:18:2017:23:02:34 cd ..
+   92  07:18:2017:23:02:35 ls
+   93  07:18:2017:23:02:41 ls datafactory/
+   94  07:18:2017:23:02:44 ld datafactory/python/
+   95  07:18:2017:23:02:49 ls datafactory/python/
+   96  07:18:2017:23:02:50 ls
+   97  07:18:2017:23:08:11 vi ~/.bashrc 
+   98  07:18:2017:23:08:54 abash 
+   99  07:18:2017:23:08:59 sshcdf
+  100  07:18:2017:23:09:23 alias sshcdf
+  101  07:18:2017:23:09:32 ssh -i ~/.ssh/dev-util-stansberryterminal.pem ec2-54-162-61-96.compute-1.amazonaws.com
+  102  07:18:2017:23:13:38 ssh -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@ec2-54-162-61-96.compute-1.amazonaws.com
+  103  07:17:2017:22:56:30 vi ../datafactory/python/datafactory/dynamodb/quandl_dataset.py 
+  104  07:18:2017:21:23:16 clear
+  105  07:18:2017:21:23:21 git stash
+  106  07:18:2017:21:23:23 git pull
+  107  07:18:2017:21:23:28 ls
+  108  07:18:2017:21:24:30 vi poll2Dynamo.py 
+  109  07:18:2017:21:41:39 mv poll2Dynamo.py dynamo_quandl_loader.py
+  110  07:18:2017:21:41:45 python dynamo_quandl_loader.py 
+  111  07:18:2017:21:42:03 pip install -U parmiko
+  112  07:18:2017:21:42:39 pip install -U paramiko
+  113  07:18:2017:21:42:50 python dynamo_quandl_loader.py 
+  114  07:18:2017:21:43:18 vi dynamo_quandl_loader.py 
+  115  07:18:2017:21:45:16 python dynamo_quandl_loader.py 
+  116  07:18:2017:21:45:19 vi dynamo_quandl_loader.py 
+  117  07:18:2017:21:45:34 python dynamo_quandl_loader.py 
+  118  07:18:2017:21:46:03 vi dynamo_quandl_loader.py 
+  119  07:18:2017:21:46:42 python dynamo_quandl_loader.py 
+  120  07:18:2017:21:46:59 vi dynamo_quandl_loader.py 
+  121  07:18:2017:21:49:37 python dynamo_quandl_loader.py 
+  122  07:18:2017:21:49:41 vi dynamo_quandl_loader.py 
+  123  07:18:2017:21:51:22 alias sshdf
+  124  07:18:2017:21:51:25 alias sshd
+  125  07:18:2017:21:51:28 abash 
+  126  07:18:2017:21:51:30 alias sshdf
+  127  07:18:2017:21:51:45 vi dynamo_quandl_loader.py 
+  128  07:18:2017:21:52:12 vi ./dynamoDownload.sh 
+  129  07:18:2017:21:52:32 python dynamo_quandl_loader.py 
+  130  07:18:2017:21:52:50 vi ./dynamoDownload.sh 
+  131  07:18:2017:21:53:39 python dynamo_quandl_loader.py 
+  132  07:18:2017:21:54:04 vi dynamo_quandl_loader.py 
+  133  07:18:2017:21:54:18 python dynamo_quandl_loader.py 
+  134  07:18:2017:21:54:27 ls
+  135  07:18:2017:21:54:31 vi dynamo_quandl_loader.py 
+  136  07:18:2017:21:58:09 python dynamo_quandl_loader.py 
+  137  07:18:2017:21:58:22 vi dynamo_quandl_loader.py 
+  138  07:18:2017:21:59:36 python dynamo_quandl_loader.py 
+  139  07:18:2017:21:59:50 vi dynamo_quandl_loader.py 
+  140  07:18:2017:22:00:46 python dynamo_quandl_loader.py 
+  141  07:18:2017:22:00:53 ll
+  142  07:18:2017:22:00:57 abash 
+  143  07:18:2017:22:00:58 ll
+  144  07:18:2017:22:01:05 vi ~/.bashrc 
+  145  07:18:2017:22:01:11 abash 
+  146  07:18:2017:22:01:12 ll
+  147  07:18:2017:22:01:16 vi ~/.bashrc 
+  148  07:18:2017:22:01:29 abash 
+  149  07:18:2017:22:01:30 ll
+  150  07:18:2017:22:01:38 drm ZACKS_FC_a2c58a8a85a57d9d48dbffade08a0394*
+  151  07:18:2017:22:01:45 python dynamo_quandl_loader.py 
+  152  07:18:2017:22:02:00 vi dynamo_quandl_loader.py 
+  153  07:18:2017:22:02:08 python dynamo_quandl_loader.py 
+  154  07:18:2017:22:02:20 vi dynamo_quandl_loader.py 
+  155  07:18:2017:22:08:26 python dynamo_quandl_loader.py 
+  156  07:18:2017:22:08:41 vi dynamo_quandl_loader.py 
+  157  07:18:2017:22:08:56 python dynamo_quandl_loader.py 
+  158  07:18:2017:22:09:06 vi dynamo_quandl_loader.py 
+  159  07:18:2017:22:09:58 python dynamo_quandl_loader.py 
+  160  07:18:2017:22:10:39 vi dynamo_quandl_loader.py 
+  161  07:18:2017:22:10:51 python dynamo_quandl_loader.py 
+  162  07:18:2017:22:10:59 vi dynamo_quandl_loader.py 
+  163  07:18:2017:22:13:06 python dynamo_quandl_loader.py 
+  164  07:18:2017:22:13:18 vi dynamo_quandl_loader.py 
+  165  07:18:2017:22:15:39 python dynamo_quandl_loader.py 
+  166  07:18:2017:22:16:33 vi dynamo_quandl_loader.py 
+  167  07:18:2017:22:16:48 python dynamo_quandl_loader.py 
+  168  07:18:2017:22:16:53 vi dynamo_quandl_loader.py 
+  169  07:18:2017:22:17:42 python dynamo_quandl_loader.py 
+  170  07:18:2017:22:17:45 ll
+  171  07:18:2017:22:17:51 python dynamo_quandl_loader.py 
+  172  07:18:2017:22:17:57 vi dynamo_quandl_loader.py 
+  173  07:18:2017:22:19:38 python dynamo_quandl_loader.py 
+  174  07:18:2017:22:19:46 vi dynamo_quandl_loader.py 
+  175  07:18:2017:22:20:05 python dynamo_quandl_loader.py 
+  176  07:18:2017:22:21:10 vi dynamo_quandl_loader.py 
+  177  07:18:2017:22:22:16 python dynamo_quandl_loader.py 
+  178  07:18:2017:22:22:46 vi dynamo_quandl_loader.py 
+  179  07:18:2017:22:23:26 python dynamo_quandl_loader.py 
+  180  07:18:2017:22:24:35 vi dynamo_quandl_loader.py 
+  181  07:18:2017:22:24:55 python dynamo_quandl_loader.py 
+  182  07:18:2017:22:25:03 vi dynamo_quandl_loader.py 
+  183  07:18:2017:22:26:03 python dynamo_quandl_loader.py 
+  184  07:18:2017:22:27:44 vi dynamo_quandl_loader.py 
+  185  07:18:2017:22:28:33 python dynamo_quandl_loader.py 
+  186  07:18:2017:22:31:10 vi dynamo_quandl_loader.py 
+  187  07:18:2017:22:31:45 python dynamo_quandl_loader.py 
+  188  07:18:2017:22:31:51 vi dynamo_quandl_loader.py 
+  189  07:18:2017:22:31:58 python dynamo_quandl_loader.py 
+  190  07:18:2017:22:32:01 vi dynamo_quandl_loader.py 
+  191  07:18:2017:22:32:09 python dynamo_quandl_loader.py 
+  192  07:18:2017:22:32:19 vi dynamo_quandl_loader.py 
+  193  07:18:2017:22:33:36 python dynamo_quandl_loader.py 
+  194  07:18:2017:22:33:45 vi dynamo_quandl_loader.py 
+  195  07:18:2017:22:33:55 python dynamo_quandl_loader.py 
+  196  07:18:2017:22:34:04 vi dynamo_quandl_loader.py 
+  197  07:18:2017:22:38:34 python dynamo_quandl_loader.py 
+  198  07:18:2017:22:38:41 vi dynamo_quandl_loader.py 
+  199  07:18:2017:22:44:12 gitk
+  200  07:18:2017:22:46:02 mv dynamo_quandl_loader.py ../datafactory/python/datafactory/dynamodb/dynamodb_quandl_loader.py
+  201  07:18:2017:22:46:11 git add ../datafactory/python/datafactory/dynamodb/dynamodb_quandl_loader.py
+  202  07:18:2017:22:46:12 ls
+  203  07:18:2017:22:46:19 rm ZACKS_FC_a2c58a8a85a57d9d48dbffade08a0394*
+  204  07:18:2017:22:46:20 ls
+  205  07:18:2017:22:46:23 gitk
+  206  07:18:2017:22:47:01 mv dynamoDownload.sh dynamoDownload.sh.bak
+  207  07:18:2017:22:47:08 git checkout dynamoDownload.sh
+  208  07:18:2017:22:47:10 gitk
+  209  07:18:2017:22:48:20 git commit -am "move poll2dyanamodb to datafactory dynamodb_quandl_loader.py"
+  210  07:18:2017:22:52:02 git push
+  211  07:18:2017:23:13:47 vi ~/.bashrc 
+  212  07:14:2017:20:48:17 clear
+  213  07:16:2017:21:24:18 ll
+  214  07:16:2017:21:24:34 vi zfundamentals_manager.py 
+  215  07:16:2017:21:24:54 pythonc zfundamentals_manager.py 
+  216  07:16:2017:21:25:01 vi zfundamentals_manager.py 
+  217  07:16:2017:21:30:50 pythonc zfundamentals_manager.py 
+  218  07:16:2017:21:30:52 vi zfundamentals_manager.py 
+  219  07:16:2017:21:42:52 pythonc zfundamentals_manager.py 
+  220  07:16:2017:21:43:10 git add zfundamentals_manager.py 
+  221  07:16:2017:21:43:13 gitk
+  222  07:16:2017:21:44:00 git commit -m "add zfundamentals_manager"
+  223  07:16:2017:21:51:57 git push
+  224  07:16:2017:21:52:08 gitk
+  225  07:17:2017:11:58:49 git pull
+  226  07:17:2017:11:59:06 cp zfundamentals_manager.py /tmp/
+  227  07:17:2017:11:59:07 ls
+  228  07:17:2017:11:59:18 git branch -l
+  229  07:17:2017:11:59:27 git checkout dev_datafactory_restructure
+  230  07:17:2017:11:59:29 ls
+  231  07:17:2017:11:59:38 git push
+  232  07:17:2017:12:00:38 mkdir fundamentals && cp /tmp/zfundamentals_manager.py fundamentals/
+  233  07:17:2017:12:00:50 git commit -am "add fundamentals services"
+  234  07:17:2017:12:01:17 ls
+  235  07:17:2017:12:01:21 ll fundamentals/
+  236  07:17:2017:12:01:26 git push
+  237  07:17:2017:12:01:43 git add fundamentals/
+  238  07:17:2017:12:01:46 git add fundamentals/zfundamentals_manager.py 
+  239  07:17:2017:12:01:49 git commit -am "add fundamentals services"
+  240  07:17:2017:12:01:51 git push
+  241  07:13:2017:22:32:28 clear
+  242  07:13:2017:22:32:38 cd ../dynamodb/
+  243  07:13:2017:22:32:38 ls
+  244  07:13:2017:22:32:58 vi fc.json
+  245  07:13:2017:22:53:50 cp fc.json /tmp/
+  246  07:13:2017:22:55:28 python zacks_dataset.py 
+  247  07:13:2017:23:04:03 vi fc.json
+  248  07:13:2017:23:04:55 python dynamodb_dataset_table.py 
+  249  07:13:2017:23:08:48 :160
+  250  07:13:2017:23:09:21 python dynamodb_dataset_table.py 
+  251  07:13:2017:23:10:24 pip install -U boto3
+  252  07:13:2017:23:10:36 python dynamodb_dataset_table.py 
+  253  07:13:2017:23:11:26 ls
+  254  07:13:2017:23:11:55 python dynamodb_dataset_table.py 
+  255  07:13:2017:23:12:54 echo $PYTHONPATH
+  256  07:13:2017:23:13:37 python dynamodb_dataset_table.py 
+  257  07:13:2017:23:19:52 cat fc.json 
+  258  07:13:2017:23:19:56 vi fc.json 
+  259  07:13:2017:23:21:10 cp fc.json /tmp
+  260  07:13:2017:23:21:13 cp fc.json /tmp/
+  261  07:13:2017:23:21:16 python dynamodb_dataset_table.py 
+  262  07:13:2017:23:23:20 cat fc.json 
+  263  07:13:2017:23:28:41 python dynamodb_dataset_table.py 
+  264  07:13:2017:23:29:37 gitk
+  265  07:13:2017:23:30:06 git add zacks_dataset.py fc.json 
+  266  07:13:2017:23:32:56 vi zacks_dataset.py 
+  267  07:13:2017:23:42:28 python dynamodb_dataset_table.py 
+  268  07:13:2017:23:42:43 python zacks_dataset.py 
+  269  07:13:2017:23:48:52 python dynamodb_dataset_table.py 
+  270  07:13:2017:23:48:56 python zacks_dataset.py 
+  271  07:13:2017:23:52:16 python dynamodb_dataset_table.py 
+  272  07:13:2017:23:53:53 git commit -am "Add generic zacks insertion method and class structure with test config file"
+  273  07:13:2017:23:54:45 git push
+  274  07:17:2017:22:43:37 git stash
+  275  07:17:2017:22:43:46 git pull
+  276  07:17:2017:22:43:57 git banch -l
+  277  07:17:2017:22:44:04 git branch -l
+  278  07:17:2017:22:44:24 git checkout dev
+  279  07:17:2017:22:44:31 git stash
+  280  07:17:2017:22:44:37 git pull
+  281  07:17:2017:22:47:27 gitk
+  282  07:17:2017:22:50:43 ls
+  283  07:17:2017:22:53:02 cd ../../../
+  284  07:17:2017:22:53:07 cd ..
+  285  07:17:2017:22:54:10 vi services/poll2Dynamo.py 
+  286  07:18:2017:21:26:44 vi datafactory/python/datafactory/dynamodb/quandl_dataset.py 
+  287  07:18:2017:21:37:21 gitk
+  288  07:18:2017:23:16:15 sshdf
+  289  07:18:2017:23:16:17 abash 
+  290  07:18:2017:23:16:18 sshdf
+  291  07:18:2017:23:30:10 q
+  292  07:18:2017:23:30:14 sshcdf
+  293  07:14:2017:20:48:21 clear
+  294  07:13:2017:21:41:20 gitk
+  295  07:13:2017:21:41:31 git fetch ; git pull
+  296  07:13:2017:21:41:35 gitk
+  297  07:13:2017:21:59:20 vi ../datafactory/python/datafactory/dynamodb/dynamodb_dataset_table.py 
+  298  07:13:2017:21:59:44 vi ../datafactory/python/datafactory/dynamodb/dynamo_accessor.py 
+  299  07:13:2017:22:00:20 vi ../datafactory/python/datafactory/dynamodb/dynamodb_dataset_table.py 
+  300  07:13:2017:23:29:31 ls
+  301  07:13:2017:23:30:50 vi ../datafactory/python/datafactory/dynamodb/dynamodb_dataset_table.py 
+  302  07:14:2017:00:06:04 ls
+  303  07:14:2017:00:06:08 grip zip .
+  304  07:14:2017:00:06:54 vi ../datafactory/python/datafactory/quandl_load/quandl_load.py 
+  305  07:14:2017:20:47:52 clear
+  306  07:14:2017:23:00:34 history | grep -i env
+  307  07:14:2017:23:01:48 vi ~/Documents/tips.txt 
+  308  07:14:2017:23:02:32 gvim ~/Documents/tips.txt 
+  309  07:14:2017:23:08:31 vi ~/.gitconfig 
+  310  07:14:2017:23:44:20 vi ~/Downloads/python.vim 
+  311  07:14:2017:23:50:06 vi ~/.vim/syntax/python.vim 
+  312  07:14:2017:23:53:41 vi ~/.vimrc 
+  313  07:15:2017:00:02:09 cp sbcontent_manager.py zfundamentals_manager.py
+  314  07:15:2017:00:02:25 vi zfundamentals_manager.py 
+  315  07:15:2017:00:25:54 ll
+  316  07:15:2017:01:28:46 which aws
+  317  07:15:2017:01:36:06 mkdir -p ~/development/utils
+  318  07:15:2017:01:37:03 pushd ~/development/utils/
+  319  07:15:2017:01:37:04 ls
+  320  07:15:2017:01:37:49 mv ~/Downloads/Simba_DynamoDB_JDBC_Desktop.zip .
+  321  07:15:2017:01:38:00 unzip Simba_DynamoDB_JDBC_Desktop.zip 
+  322  07:15:2017:01:38:02 ls
+  323  07:15:2017:01:38:16 ll
+  324  07:15:2017:01:38:34 unzip DynamoDBJDBC42_1.0.2.1000_Client.zip 
+  325  07:15:2017:01:38:35 ls
+  326  07:15:2017:01:39:18 drm EULA.txt LICENSE.txt NOTICES.txt README\ -\ Third\ Party\ Licenses* Release\ Notes* Schema* Simba\ JDBC\ Driver\ for\ Amazon\ DynamoDB\ Install\ Guide.pdf 
+  327  07:15:2017:01:39:19 ls
+  328  07:15:2017:01:39:34 mkdir DynamoDBJDBC42_1.0.2.1000_Client
+  329  07:15:2017:01:39:43 cd DynamoDBJDBC42_1.0.2.1000_Client
+  330  07:15:2017:01:39:50 unzip ../DynamoDBJDBC42_1.0.2.1000_Client.zip 
+  331  07:15:2017:01:39:53 ls
+  332  07:15:2017:01:40:03 vi README\ -\ Third\ Party\ Licenses.txt 
+  333  07:15:2017:01:40:17 cd ..
+  334  07:15:2017:01:40:27 which preview
+  335  07:15:2017:01:42:49 echo 'alias preview='/Applications/Preview.app/Contents/MacOS/Preview' >> ~/.bashrc && source ~/.bashrc 
+  336  07:15:2017:01:43:06 echo 'alias preview='/Applications/Preview.app/Contents/MacOS/Preview' >> ~/.bashrc; source ~/.bashrc 
+  337  07:15:2017:01:43:36 echo "alias preview='/Applications/Preview.app/Contents/MacOS/Preview'" >> ~/.bashrc && source ~/.bashrc 
+  338  07:15:2017:01:45:03 cd DynamoDBJDBC42_1.0.2.1000_Client
+  339  07:15:2017:01:45:13 preview Simba\ JDBC\ Driver\ for\ Amazon\ DynamoDB\ Install\ Guide.pdf &
+  340  07:15:2017:01:45:46 preview "Simba\ JDBC\ Driver\ for\ Amazon\ DynamoDB\ Install\ Guide.pdf" &
+  341  07:16:2017:20:22:20 ls
+  342  07:16:2017:20:22:28 ls libs/
+  343  07:16:2017:20:26:00 ls ..
+  344  07:16:2017:20:26:21 cp Simba\ JDBC\ Driver\ for\ Amazon\ DynamoDB\ Install\ Guide.pdf libs/
+  345  07:16:2017:20:27:59 cp ../SimbaDynamoDBJDBCDriver.lic ../libs/
+  346  07:16:2017:20:32:19 history | grep aws
+  347  07:16:2017:20:32:47 vi ~/.aws/config 
+  348  07:16:2017:20:32:57 vi ~/.aws/credentials 
+  349  07:16:2017:20:36:07 ps -a
+  350  07:16:2017:20:36:24 kill -9 4455 4459
+  351  07:16:2017:20:55:06 vi ~/.aws/credentials 
+  352  07:16:2017:20:55:26 ls /Users/rfoster/.aws/credentials
+  353  07:16:2017:20:55:46 ls /Users/rfoster/.aws/config 
+  354  07:16:2017:20:55:53 vi /Users/rfoster/.aws/config 
+  355  07:16:2017:20:59:12 echo $JAVA_CLASSPATH
+  356  07:16:2017:21:01:45 export CLASSPATH=.;/Users/rfoster/development/utils/libs
+  357  07:16:2017:21:02:13 export CLASSPATH=.:/Users/rfoster/development/utils/libs
+  358  07:16:2017:21:04:54 brew install squirrel
+  359  07:16:2017:21:07:09 man squirrel
+  360  07:16:2017:21:07:14 squirrel
+  361  07:16:2017:21:07:46 man sq
+  362  07:16:2017:21:07:48 sq
+  363  07:16:2017:21:08:14 sq help
+  364  07:16:2017:21:08:36 sq jdbc:Host=dynamodb.us-east-1.amazonaws.com;Region=us-east-1;CredentialFilePath=/Users/rfoster/.aws/credentials;ProfileName=profilename
+  365  07:16:2017:21:08:43 sq
+  366  07:16:2017:21:09:12 sq --help
+  367  07:16:2017:21:09:17 sq -help
+  368  07:16:2017:21:13:03 pushd ~/Downloads/
+  369  07:16:2017:21:13:06 ls
+  370  07:16:2017:21:13:10 java -jar squirrel-sql-<version>-install.jar
+  371  07:16:2017:21:13:33 java -jar squirrel-sql-3.7.1-MACOSX-install.jar
+  372  07:16:2017:21:14:30 brew cask install java
+  373  07:16:2017:21:18:27 java -jar squirrel-sql-3.7.1-MACOSX-install.jar
+  374  07:17:2017:12:59:39 curl -X POST Christian Gloss [12:22 PM] 
+  375  07:17:2017:12:59:39 Hi Robert, Ana asked me to check in with you on a request for data dump?
+  376  07:17:2017:12:59:39 [12:23] 
+  377  07:17:2017:12:59:39 I had thought we would be getting an end point to send all the data to and run a full migration of content to it
+  378  07:17:2017:12:59:39 Robert Foster [12:47 PM] 
+  379  07:17:2017:12:59:39 Yes I believe the end point accepting data was sent last week, I'll check my email
+  380  08:07:2017:18:43:43 Christian Gloss [12:48 PM] 
+  381  08:07:2017:18:43:43 sorry i was on vacation ill go through the emails today. just wanted to quick touch base as ana said it was urgent
+  382  08:07:2017:18:43:43 Robert Foster [12:51 PM] 
+  383  08:07:2017:18:43:43 oh I don't know haven't spoken with her today, but I got CCD on the endpoint email 07.13
+  384  08:07:2017:18:43:43 [12:52] 
+  385  08:07:2017:18:43:43 I'll double check and make sure it's still accessible
+  386  08:07:2017:18:43:43 new messages
+  387  08:07:2017:18:43:43 Christian Gloss [12:53 PM] 
+  388  08:07:2017:18:43:43 thanks much appreciated. I can work on getting that all wired up then today and run the migration
+  389  08:07:2017:18:43:43 Mark as read (esc)
+  390  07:17:2017:13:00:13 curl -X POST http://ec2-174-129-144-17.compute-1.amazonaws.com:8183/sbcmanager/updatedb/articles {}
+  391  07:17:2017:15:02:45 vi ../development/workspace/ref/voxserv.py 
+  392  07:17:2017:15:04:09 vi ../development/workspace/ref/etl_node_manager.py 
+  393  07:17:2017:15:04:24 vi ../development/workspace/ref/etl_node_controller.py 
+  394  07:17:2017:15:04:36 vi ../development/workspace/ref/voxserv.py 
+  395  07:17:2017:15:06:04 vi ../development/workspace/ref/etl_node_manager.py 
+  396  07:17:2017:15:06:54 vi ../development/workspace/ref/etl_node_controller.py 
+  397  07:17:2017:15:07:03 vi ../development/workspace/ref/voxserv.py 
+  398  07:17:2017:22:24:33 clear && abash
+  399  07:17:2017:22:24:37 sshdf
+  400  07:13:2017:21:58:04 vi ../../ref/etl_node.py 
+  401  07:13:2017:22:02:34 vi ../../ref/etl_node_manager.py 
+  402  07:14:2017:20:47:47 clear
+  403  07:14:2017:20:55:52 vi ~/Documents/tips.txt 
+  404  07:14:2017:21:18:51 git branch -l
+  405  07:14:2017:23:00:21 history | grep venv
+  406  07:16:2017:20:40:31 pushd ~/development/utils/DynamoDBJDBC42_1.0.2.1000_Client
+  407  07:16:2017:20:40:32 ls
+  408  07:16:2017:20:40:39 cd ..
+  409  07:16:2017:20:40:40 ls
+  410  07:16:2017:20:40:49 cd DynamoDBJDBC42_1.0.2.1000_Client
+  411  07:16:2017:20:40:50 ls
+  412  07:16:2017:20:40:52 ls libs/
+  413  07:16:2017:20:40:56 ls ..
+  414  07:16:2017:20:40:59 ls libs/
+  415  07:16:2017:20:42:17 ls 
+  416  07:16:2017:20:42:27 cd ..
+  417  07:16:2017:20:42:28 ll
+  418  07:16:2017:20:42:32 ll libs/
+  419  07:16:2017:20:46:06 vi ~/Documents/awsaccess.csv 
+  420  07:16:2017:21:32:20 vi ~/development/workspace/ref/etl_node_manager.py 
+  421  07:18:2017:23:31:45 vi ~/Documents/awsaccess.csv 
+  422  07:13:2017:21:43:10 cd datafactory/python/datafactory/
+  423  07:13:2017:21:43:12 ls
+  424  07:13:2017:21:43:35 vi es/es_query.py 
+  425  07:13:2017:21:43:46 vi README.rst 
+  426  07:13:2017:21:45:53 vi quandl_load/quandl_load.py 
+  427  07:13:2017:21:48:38 vi dynamodb/dynamo_accessor.py 
+  428  07:13:2017:21:49:00 vi dynamodb/dynamodb_dataset_table.py 
+  429  07:13:2017:21:57:05 cd cd dynamodb/
+  430  07:13:2017:21:57:09 cd dynamodb/
+  431  07:13:2017:21:57:10 ;s
+  432  07:13:2017:21:57:11 ls
+  433  07:13:2017:21:57:21 vi zacks_dataset.py
+  434  07:13:2017:23:32:33 python dynamodb_dataset_table.py 
+  435  07:13:2017:23:42:25 vi zacks_dataset.py
+  436  07:14:2017:00:08:34 vi ../quandl_load/quandl_load.config 
+  437  07:18:2017:23:33:45 sshcdf 
+  438  07:19:2017:00:14:13 alias sshdf
+  439  07:19:2017:00:14:52 scp -i ~/.ssh/dev-util-stansberryterminal.pem c2-174-129-144-17.compute-1.amazonaws.com:/home/.aws ./aws
+  440  07:19:2017:00:15:04 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem c2-174-129-144-17.compute-1.amazonaws.com:/home/.aws ./aws
+  441  07:19:2017:00:15:19 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws ./aws
+  442  07:19:2017:00:15:38 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws ./aws
+  443  07:19:2017:00:16:00 sshdf
+  444  07:19:2017:00:16:12 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws ./aws
+  445  07:19:2017:00:16:27 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws ./aws
+  446  07:19:2017:00:16:57 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws ./aws
+  447  07:19:2017:00:20:56 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/paws ./aws
+  448  07:19:2017:00:21:42 history | grep scp
+  449  07:19:2017:00:24:47 scp -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/pws .
+  450  07:19:2017:00:24:52 scp -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/paws
+  451  07:19:2017:00:25:05 scp -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/paws ./paws
+  452  07:19:2017:00:25:18 scp -v -r -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/paws ./paws
+  453  07:19:2017:00:42:15 scp -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@c2-172-31-79-127.compute-1.amazonaws.com:/home/ec2-user/paws ./paws
+  454  07:19:2017:00:42:29 scp -v -r -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@c2-172-31-79-127.compute-1.amazonaws.com:/home/ec2-user/paws ./paws
+  455  07:19:2017:00:42:52 vi /etc/ssh/ssh_config 
+  456  07:19:2017:00:43:22 scp -v -r -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@c2-172-31-79-127.compute-1.amazonaws.com:/home/ec2-user/paws ./paws
+  457  07:19:2017:00:47:20 scp -v -r -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@ec2-172-31-79-127.compute-1.amazonaws.com:/home/ec2-user/paws ./paws
+  458  07:19:2017:00:47:57 scp -v -r -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@ec2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/paws ./paws
+  459  07:19:2017:00:48:01 ls
+  460  07:19:2017:00:48:36 alias sshcdf
+  461  07:19:2017:00:49:15 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem paws ec2-user@ec2-54-162-61-96.compute-1.amazonaws.com:/home/ec2-user/.aws
+  462  07:19:2017:00:49:22 sshcdf
+  463  07:19:2017:00:50:28 ll paws/
+  464  07:19:2017:00:51:00 scp -v -r -i ~/.ssh/dev-util-stansberryterminal.pem -r  ec2-user@ec2-172-31-79-127.compute-1.amazonaws.com:/home/ec2-user/.aws ./paws
+  465  07:19:2017:00:51:17 alias sshdf
+  466  07:19:2017:00:51:58 scp -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@ec2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws aws
+  467  07:19:2017:00:52:08 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@ec2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws aws
+  468  07:19:2017:00:52:29 alias sshcdf
+  469  07:19:2017:00:53:30 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem aws ec2-user@ec2-54-162-61-96.compute-1.amazonaws.com:/home/ec2-user/.aws
+  470  07:19:2017:00:53:35 sshcdf
+  471  07:19:2017:00:56:40 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem aws ec2-user@ec2-54-162-61-96.compute-1.amazonaws.com:/home/ec2-user/.aws
+  472  07:19:2017:00:56:44 sshcdf
+  473  07:20:2017:16:19:34 wrk
+  474  07:20:2017:16:19:36 cd Stansberry-Terminal-Prototype/
+  475  07:20:2017:16:19:39 git stash
+  476  07:20:2017:16:19:52 git fetch && git pull --rebase
+  477  07:20:2017:16:20:43 git branch -l
+  478  07:20:2017:16:21:02 vi ~/Documents/tips.txt 
+  479  07:20:2017:16:44:36 sshcdf
+  480  07:20:2017:16:49:50 xit
+  481  07:20:2017:16:49:52 exit
+  482  07:18:2017:23:32:18 abash 
+  483  07:18:2017:23:32:21 sshcdf
+  484  07:19:2017:00:21:15 sshdf
+  485  07:20:2017:16:50:14 cchcdf
+  486  07:20:2017:16:50:16 ls
+  487  07:20:2017:16:50:19 sshcdf
+  488  07:20:2017:16:52:13 alias sshdf
+  489  07:20:2017:16:53:09 scp -i ~/.ssh/dev-util-stansberryterminal.pem ~/.gitconfig ec2-user@ec2-174-129-144-17.compute-1.amazonaws.com:/home/rfoster/
+  490  07:20:2017:17:00:23 SSHCDF
+  491  07:20:2017:17:00:28 sshdf
+  492  07:22:2017:00:52:50 ls ~/.ssh/
+  493  07:22:2017:00:53:14 vi ~/.bashrc 
+  494  07:22:2017:00:53:41 abash 
+  495  07:22:2017:00:53:44 sshes
+  496  07:22:2017:00:53:56 vi ~/.bashrc 
+  497  07:22:2017:00:54:15 abash 
+  498  07:22:2017:00:54:18 sshes
+  499  07:22:2017:00:54:31 alias sshes
+  500  07:22:2017:00:55:09 ssh -i ~/.ssh/sr-phoenix-test.pem ec2-user@ec2-52-14-134-109.us-east-2.compute.amazonaws.com
+  501  07:22:2017:00:55:27 ssh -v -i ~/.ssh/sr-phoenix-test.pem ec2-user@ec2-52-14-134-109.us-east-2.compute.amazonaws.com
+  502  07:22:2017:01:03:40 ssh -v -i ~/.ssh/sr-phoenix-test.pem ec2-user@ec2-13-58-225-37.us-east-2.comput
+  503  07:22:2017:01:03:54 ssh -v -i ~/.ssh/sr-phoenix-test.pem ec2-user@ec2-13-58-225-37.us-east-2.compute
+  504  07:22:2017:01:04:23 ssh -v -i ~/.ssh/sr-phoenix-test.pem ec2-user@ec2-13-58-225-37.us-east-2.compute.amazonaws.com
+  505  07:22:2017:01:04:29 exit
+  506  07:18:2017:23:59:32 git checkout dev
+  507  07:18:2017:23:59:42 gitk
+  508  07:18:2017:23:59:50 git push
+  509  07:19:2017:00:00:07 vi ../datafactory/python/datafactory/dynamodb/dynamodb_quandl_loader.py 
+  510  07:19:2017:00:31:25 sshcdf
+  511  07:19:2017:00:40:54 sshdf
+  512  07:20:2017:17:06:28 sshcdf
+  513  07:18:2017:23:34:28 abash 
+  514  07:18:2017:23:34:31 alias sshcdf
+  515  07:18:2017:23:35:41 scp -i ~/.ssh/dev-util-stansberryterminal.pem ~/.gitconfig ec2-user@ec2-54-162-61-96.compute-1.amazonaws.com:/home/ec2-user/
+  516  07:19:2017:00:17:31 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws 
+  517  07:19:2017:00:17:41 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@c2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.aws .
+  518  07:19:2017:00:18:05 ifconig | grep ip
+  519  07:19:2017:00:18:09 abash 
+  520  07:19:2017:00:18:14 ifconfig | grep ip
+  521  07:19:2017:00:18:21 ifconfig
+  522  07:19:2017:08:30:32 vi ~/.bashrc 
+  523  07:20:2017:09:26:41 clear
+  524  07:20:2017:09:26:43 sshcdf
+  525  07:20:2017:09:26:58 alias sshcdf
+  526  07:20:2017:09:27:21 ssh -i ~/.ssh/dev-util-stansberryterminal.pem rfoster@ec2-54-162-61-96.compute-1.amazonaws.com
+  527  07:20:2017:10:04:18 cd ..
+  528  07:20:2017:10:04:23 vi ~/Documents/Scrum.txt
+  529  07:18:2017:23:32:01 sshcdf
+  530  07:20:2017:16:50:03 clear
+  531  07:20:2017:16:50:06 sshdf
+  532  07:24:2017:21:10:30 cd..
+  533  07:24:2017:21:10:31 ls
+  534  07:24:2017:21:10:33 cd ..
+  535  07:24:2017:21:10:34 ls
+  536  07:24:2017:21:10:40 cd datafactory/python/datafactory/dynamodb/
+  537  07:24:2017:21:10:41 ls
+  538  07:24:2017:21:10:57 vi dynamodb_quandl_loader.py 
+  539  07:24:2017:21:12:04 vi dynamodb_dataset_table.py 
+  540  07:24:2017:21:15:57 cd ..
+  541  07:24:2017:21:17:10 ls
+  542  07:24:2017:21:17:21 ls quandl_query/
+  543  07:24:2017:21:17:26 ls quandl
+  544  07:24:2017:21:17:33 ls quandl/quandl_query/
+  545  07:24:2017:21:17:41 ll quandl_query/
+  546  07:24:2017:21:17:49 ll quandl/quandl_query/
+  547  07:24:2017:21:17:58 cd quandl/quandl_query/
+  548  07:24:2017:21:18:00 ll
+  549  07:24:2017:21:18:54 drm quandl_query.py.bak __init__.py __pycache__/
+  550  07:24:2017:21:19:06 drm ../../quandl_query/
+  551  07:24:2017:21:19:41 git commit -am "add remove restructure files"
+  552  07:24:2017:21:19:57 git push
+  553  07:24:2017:21:20:37 cd ..
+  554  07:24:2017:21:20:38 ls
+  555  07:24:2017:21:20:45 cd ..
+  556  07:24:2017:21:20:45 ls
+  557  07:24:2017:21:20:51 rm -rf __pycache__/
+  558  07:24:2017:21:21:01 cd etl/
+  559  07:24:2017:21:21:02 ll
+  560  07:24:2017:21:21:18 drm __pycache__/ __init__.py 
+  561  07:24:2017:21:21:18 ls
+  562  07:24:2017:21:21:30 ll
+  563  07:24:2017:21:21:33 cd ..
+  564  07:24:2017:21:21:33 ll
+  565  07:24:2017:21:21:35 ll e
+  566  07:24:2017:21:21:38 ll es/
+  567  07:24:2017:21:21:48 drm .DS_Store 
+  568  07:24:2017:21:21:49 ll
+  569  07:24:2017:21:21:56 ll quandl/
+  570  07:24:2017:21:21:59 ll quandl/quandl_load/
+  571  07:24:2017:21:22:36 cd ..
+  572  07:24:2017:21:22:38 ls
+  573  07:24:2017:21:22:39 cd ..
+  574  07:24:2017:21:22:40 ll
+  575  07:24:2017:21:22:45 rm .DS_Store 
+  576  07:24:2017:21:22:48 rm __init__.py 
+  577  07:24:2017:21:23:03 vi .gitignore
+  578  07:24:2017:21:23:16 rm .gitignore 
+  579  07:24:2017:21:23:26 git commit -am "remove ignore files"
+  580  07:24:2017:21:23:31 vi .gitignore
+  581  07:24:2017:21:23:42 git add .gitignore 
+  582  07:24:2017:21:23:49 git commit -am "add .gitignore"
+  583  07:24:2017:21:23:51 git push
+  584  07:24:2017:21:23:55 ls
+  585  07:24:2017:21:23:58 ll
+  586  07:24:2017:21:24:01 ll services/
+  587  07:24:2017:21:24:03 cd services/
+  588  07:24:2017:21:24:03 ll
+  589  07:24:2017:21:24:05 ll sbcontent/
+  590  07:24:2017:21:24:08 ll
+  591  07:24:2017:21:24:11 ll res/
+  592  07:24:2017:21:24:14 ll fundamentals/
+  593  07:24:2017:21:24:21 ll util/
+  594  07:24:2017:21:24:25 ll test/
+  595  07:24:2017:21:24:27 ll
+  596  07:24:2017:21:24:58 cd ../datafactory/
+  597  07:24:2017:21:24:59 ll
+  598  07:24:2017:21:25:06 drm __pycache__/ 
+  599  07:24:2017:21:25:19 git commit -am "remove ignore files" && git push
+  600  07:24:2017:21:25:47 vi ../.gitignore 
+  601  07:24:2017:21:30:58 git commit -am "ignore .DS_Store"
+  602  07:24:2017:21:31:01 git pussh
+  603  07:24:2017:21:31:05 git push
+  604  07:24:2017:21:31:19 ll
+  605  07:24:2017:21:31:36 cd python/
+  606  07:24:2017:21:31:36 ls
+  607  07:24:2017:21:31:38 ll
+  608  07:24:2017:21:31:42 drm .DS_Store 
+  609  07:24:2017:21:31:51 git commit -am "ignore .DS_Store" && git push
+  610  07:24:2017:21:31:56 ll
+  611  07:24:2017:21:32:00 ll util/
+  612  07:24:2017:21:32:03 ll datafactory/
+  613  07:24:2017:21:33:35 ll
+  614  07:24:2017:21:33:47 cd ..
+  615  07:24:2017:21:33:48 ll
+  616  07:24:2017:21:33:49 cd ..
+  617  07:24:2017:21:33:50 ll
+  618  07:24:2017:21:33:55 ll terminal-web/
+  619  07:24:2017:21:34:04 vi terminal-web/.gitignore 
+  620  07:24:2017:21:34:29 gvim terminal-web/.gitignore 
+  621  07:24:2017:21:37:06 vi .gitignore 
+  622  07:24:2017:21:41:35 git commit -am "update .gitignore"
+  623  07:24:2017:21:41:37 git push
+  624  07:24:2017:21:50:59 sshcdf 
+  625  07:18:2017:23:49:48 abash 
+  626  07:18:2017:23:49:50 sshcdf
+  627  07:19:2017:00:20:04 sshdc
+  628  07:19:2017:00:20:06 sshdf
+  629  07:19:2017:00:30:25 i ~/Documents/tips.txt 
+  630  07:19:2017:00:30:37 vi ~/Documents/tips.txt 
+  631  07:20:2017:17:04:56 alias sshcdf
+  632  07:20:2017:16:21:13 sshcdf
+  633  07:20:2017:16:34:31 alias sshcdf
+  634  07:20:2017:16:35:09 ssh -i ~/.ssh/dev-util-stansberryterminal.pem ymaalo@ec2-54-162-61-96.compute-1.amazonaws.com
+  635  07:20:2017:16:35:24 ssh -i ~/.ssh/dev-util-stansberryterminal.pem rjuelich@ec2-54-162-61-96.compute-1.amazonaws.com
+  636  07:20:2017:16:35:43 ssh -i ~/.ssh/dev-util-stansberryterminal.pem mpoltorak@ec2-54-162-61-96.compute-1.amazonaws.com
+  637  07:20:2017:16:36:04 ssh -i ~/.ssh/dev-util-stansberryterminal.pem jhires@ec2-54-162-61-96.compute-1.amazonaws.com
+  638  07:20:2017:16:36:12 history
+  639  07:20:2017:17:01:57 sshcdf
+  640  07:24:2017:12:54:35 ll
+  641  07:24:2017:12:54:46 git branch -l
+  642  07:24:2017:12:54:51 pwd
+  643  07:24:2017:12:54:53 cd ~
+  644  07:24:2017:12:54:53 ls
+  645  07:24:2017:12:55:00 cd Desktop/Wo
+  646  07:24:2017:12:55:09 pwd
+  647  07:24:2017:12:55:17 cd development/workspace/
+  648  07:24:2017:20:21:25 mv Stansberry-Terminal-Prototype/ Stansberry-Terminal-Prototype.07.24
+  649  07:24:2017:20:22:46 cd Stansberry-Terminal-Prototype
+  650  07:24:2017:20:22:47 ls
+  651  07:24:2017:21:16:29 cd ../Stansberry-Terminal-Prototype.07.24/
+  652  07:24:2017:21:16:32 git branch -l
+  653  07:24:2017:21:16:44 git checkout dev_datafactory_restructure
+  654  07:24:2017:21:16:47 git pull
+  655  07:24:2017:21:16:52 git fetch
+  656  07:24:2017:21:16:54 ls
+  657  07:24:2017:21:16:59 cd datafactory/
+  658  07:24:2017:21:17:03 cd python/datafactory/quandl
+  659  07:24:2017:21:17:05 ls
+  660  07:24:2017:21:21:23 cd ..
+  661  07:24:2017:21:21:25 ll etl/
+  662  07:24:2017:21:50:49 sshcdf 
+  663  07:24:2017:21:52:06 abash 
+  664  07:24:2017:21:52:09 sshcdf
+  665  07:19:2017:00:40:41 vi zacks_dataset.py
+  666  07:20:2017:17:02:54 vi ~/.bashrc 
+  667  07:20:2017:17:04:10 cd ~/Downloads/
+  668  07:20:2017:17:04:11 ls
+  669  07:20:2017:17:06:46 scp -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@ec2-54-162-61-96.compute-1.amazonaws.com:/home/.ssh/id_rsa* .
+  670  07:20:2017:17:07:00 scp -i ~/.ssh/dev-util-stansberryterminal.pem ec2-user@ec2-54-162-61-96.compute-1.amazonaws.com:/home/ec2-user/.ssh/id_rsa* .
+  671  07:20:2017:17:07:14 alias sshdf
+  672  07:20:2017:17:08:51 scp -i ~/.ssh/dev-util-stansberryterminal.pem ./id_rsa* rfoster@ec2-174-129-144-17.compute-1.amazonaws.com:/home/rfoster/.ssh/
+  673  07:20:2017:17:09:09 scp -i ~/.ssh/dev-util-stansberryterminal.pem ./id_rsa* ec2-user@ec2-174-129-144-17.compute-1.amazonaws.com:/home/rfoster/.ssh/
+  674  07:20:2017:17:09:24 scp -i ~/.ssh/dev-util-stansberryterminal.pem ./id_rsa* ec2-user@ec2-174-129-144-17.compute-1.amazonaws.com:/home/ec2-user/.ssh/
+  675  07:22:2017:02:10:41 wget https://s3.amazonaws.com/jruby.org/downloads/9.1.12.0/jruby-bin-9.1.12.0.tar.gz
+  676  07:22:2017:02:10:50 ls
+  677  07:22:2017:01:04:44 ssh -v -i ~/.ssh/sr-phoenix-test.pem ec2-user@ec2-13-58-225-37.us-east-2.compute.amazonaws.com
+  678  07:22:2017:01:04:51 ll ~/.ssh/
+  679  07:22:2017:01:05:37 chmod 700 ~/.ssh/sr-phoenix-test.pem 
+  680  07:22:2017:01:05:39 ll ~/.ssh/
+  681  07:22:2017:01:05:44 ssh -v -i ~/.ssh/sr-phoenix-test.pem ec2-user@ec2-13-58-225-37.us-east-2.compute.amazonaws.com
+  682  07:22:2017:01:06:16 vi ~/.bashrc 
+  683  07:22:2017:01:06:44 abash 
+  684  07:22:2017:01:06:49 sshes
+  685  07:24:2017:21:51:16 vi ~/.bashrc 
+  686  07:20:2017:10:49:54 sshcdf
+  687  07:20:2017:11:52:45 vi ~/.gitconfig 
+  688  07:25:2017:21:24:06 clear
+  689  07:25:2017:21:40:01 cd /Users/rfoster/development/workspace/Stansberry\-Terminal\-Prototype
+  690  07:25:2017:22:17:25 vi ~/.ssh/ssh_config
+  691  07:25:2017:22:18:50 mv ~/.ssh/ssh_config ~/.ssh/config 
+  692  07:25:2017:23:35:40 brew update
+  693  07:25:2017:21:24:19 clear
+  694  07:25:2017:21:25:57 wrk
+  695  07:25:2017:21:27:40 cd Stansberry-Terminal-Prototype
+  696  07:25:2017:21:35:47 ll /usr/local/bin/
+  697  07:25:2017:21:36:34 ln -s /Applications/SourceTree.app/Contents/Resources/stree /usr/local/bin/
+  698  07:25:2017:21:38:31 stree
+  699  07:25:2017:21:39:31 ll /Applications/SourceTree.app/Contents/Resources/stree
+  700  07:25:2017:21:39:46 chmod 755 /Applications/SourceTree.app/Contents/Resources/stree
+  701  07:25:2017:21:39:47 ll /Applications/SourceTree.app/Contents/Resources/stree
+  702  07:25:2017:21:40:57 console
+  703  07:25:2017:21:41:17 export PATH=$PATH:/Applications/Utilities
+  704  07:25:2017:21:41:19 console
+  705  07:25:2017:21:43:35 vi /var/log/system.log
+  706  07:25:2017:21:48:23 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+  707  07:25:2017:21:48:28 stree 
+  708  07:25:2017:21:51:12 sudo stree
+  709  07:25:2017:21:51:28 unalias stree
+  710  07:25:2017:21:51:38 sudo /usr/local/bin/stree 
+  711  07:25:2017:21:53:12 git branch -l
+  712  07:25:2017:21:53:30 git merge dev_analysis
+  713  07:25:2017:21:53:37 git merge origin/dev_analysis
+  714  07:25:2017:21:54:08 git push
+  715  07:25:2017:21:58:11 alias sshdf
+  716  07:25:2017:22:00:33 curl ec2-174-129-144-17.compute-1.amazonaws.com:8183/sbcmanager/sort/articles
+  717  07:25:2017:22:01:43 curl ec2-174-129-144-17.compute-1.amazonaws.com:8184/sbcmanager/sort/articles
+  718  07:25:2017:22:10:29 clear
+  719  07:25:2017:22:10:35 curl ec2-174-129-144-17.compute-1.amazonaws.com:8185/sbcmanager/sort/articles
+  720  07:25:2017:22:11:38 curl ec2-174-129-144-17.compute-1.amazonaws.com:8185/sbcmanager/cashflow/VMW
+  721  07:25:2017:22:43:16 vi /etc/ssh/ssh_config 
+  722  07:25:2017:22:44:31 sudo vi /etc/ssh/ssh_config 
+  723  07:25:2017:22:45:33 vi /etc/ssh/ssh_config 
+  724  07:25:2017:22:46:01 sudo vi /etc/ssh/ssh_config 
+  725  07:25:2017:21:24:15 clear
+  726  07:25:2017:21:58:52 sshdf
+  727  07:25:2017:22:07:46 clear
+  728  07:25:2017:22:07:48 sshdf
+  729  07:25:2017:22:42:21 vi ~/.ssh/config 
+  730  07:25:2017:22:45:42 sshdf
+  731  07:25:2017:23:37:47 brew tap caskroom/cask
+  732  07:25:2017:23:37:59 brew cask update java
+  733  07:25:2017:23:38:30 brew update Caskroom/cask/java
+  734  07:25:2017:23:38:40 brew upgrade Caskroom/cask/java
+  735  07:26:2017:12:12:19 cd ..
+  736  07:26:2017:12:12:21 cd ../
+  737  07:26:2017:12:12:22 ls
+  738  07:26:2017:12:12:27 cd workspace/
+  739  07:26:2017:12:12:28 ls
+  740  07:26:2017:12:12:32 cd ref/
+  741  07:26:2017:12:12:34 ls
+  742  07:26:2017:12:14:54 ls ..
+  743  07:26:2017:12:18:26 ll
+  744  07:26:2017:12:18:36 ll 07.10/
+  745  07:26:2017:12:18:40 cd ..
+  746  07:26:2017:12:58:43 alias sshcdf
+  747  07:26:2017:13:00:03 scp -r -i ~/.ssh/dev-util-stansberryterminal.pem ~/.ssh/id_rsa* rfoster@ec2-54-162-61-96.compute-1.amazonaws.com:/home/rfoster/.ssh/
+  748  07:26:2017:13:01:44 hostname
+  749  07:26:2017:13:06:04 vi ~/.gitconfig 
+  750  07:26:2017:15:16:49 gitk
+  751  07:26:2017:15:17:06 alias gitk
+  752  07:26:2017:15:17:08 whoami
+  753  07:26:2017:15:17:13 sudo gitk
+  754  07:27:2017:01:29:47 sshcdf
+  755  07:27:2017:01:30:39 vi ~/.bashrc 
+  756  07:27:2017:01:31:42 abash 
+  757  07:27:2017:01:31:47 ec2cdf
+  758  07:27:2017:13:33:40 vi ~/.bashrc 
+  759  07:27:2017:13:33:51 sshcdf
+  760  07:27:2017:13:33:57 vi ~/.bashrc 
+  761  07:27:2017:13:34:20 ec2cdf 
+  762  07:27:2017:13:48:29 sshdf
+  763  07:27:2017:22:42:47 clear
+  764  07:27:2017:22:49:52 sshcdf
+  765  08:02:2017:09:15:01 :q
+  766  08:02:2017:09:15:02 clear
+  767  08:02:2017:09:15:04 reset
+  768  08:02:2017:09:15:10 shhcdf
+  769  08:02:2017:09:15:15 sshcdf
+  770  08:02:2017:17:10:14 sudo visudo
+  771  08:02:2017:17:10:33 sshcdf
+  772  07:27:2017:22:48:54 pip install elasticsearch
+  773  07:27:2017:22:49:13 pip freeze
+  774  07:27:2017:22:49:40 pip --version
+  775  07:27:2017:22:51:10 vi requirements.txt 
+  776  07:27:2017:22:51:48 git commit -m "add elasticsearch version to requirements"
+  777  07:27:2017:22:52:05 git commit -am "add elasticsearch version to requirements"
+  778  08:02:2017:09:49:20 clear
+  779  08:02:2017:09:49:22 sshdf
+  780  08:02:2017:10:40:25 sshcdf
+  781  08:02:2017:17:08:33 ec2cdf 
+  782  08:03:2017:00:37:59 sshcdf
+  783  08:07:2017:16:05:51 ssh rfoster@cis.linux.ksu.edu
+  784  08:07:2017:16:06:07 ssh rfoster@cislinux.ksu.edu
+  785  08:07:2017:16:06:25 ssh rfoster@linux.cis.ksu.edu
+  786  08:07:2017:16:52:19 git branch -l
+  787  08:07:2017:16:52:23 git branch -a
+  788  08:07:2017:16:52:43 git checkout remotes/origin/dev_es_query
+  789  08:07:2017:16:52:49 git stash
+  790  08:07:2017:16:52:53 git pull
+  791  08:07:2017:16:53:12 git checkout remotes/origin/dev_es_query
+  792  08:07:2017:16:53:41 git branch -l
+  793  08:07:2017:16:53:44 git branch -a
+  794  08:07:2017:16:54:14 cd ../
+  795  08:07:2017:16:54:21 mkdir yonathan
+  796  08:07:2017:16:54:24 cd yonathan/
+  797  08:07:2017:16:54:27 git clone git@github.com:ymaaloSBR/dynamodb-elasticsesarch.git
+  798  08:07:2017:16:54:33 cd dynamodb-elasticsesarch/
+  799  08:07:2017:16:54:34 ls
+  800  08:07:2017:16:54:36 cd dynamodb-elasticsearch/
+  801  08:07:2017:16:54:37 ls
+  802  08:07:2017:16:54:57 sls deploy -f es_process -r us-east-1 -s dev -v
+  803  08:07:2017:16:55:05 which aws
+  804  08:07:2017:16:55:47 npm install -g serverless
+  805  08:07:2017:16:57:02 sls deploy -f es_process -r us-east-1 -s dev -v
+  806  08:07:2017:16:58:01 ll
+  807  08:07:2017:16:58:17 git pull
+  808  08:07:2017:16:58:20 ls
+  809  08:07:2017:16:58:23 pwd
+  810  08:07:2017:16:59:00 ls
+  811  08:07:2017:16:59:33 git checkout dev
+  812  08:07:2017:16:59:55 cd ..
+  813  08:07:2017:16:59:58 cd elasticsearch/
+  814  08:07:2017:17:00:02 sls deploy -f es_process -r us-east-1 -s dev -v
+  815  08:07:2017:17:01:07 npm install
+  816  08:07:2017:17:01:19 sls deploy -f es_process -r us-east-1 -s dev -v[B
+  817  08:07:2017:17:02:01 which python
+  818  08:07:2017:17:02:05 python --version
+  819  08:07:2017:17:02:11 which pip
+  820  08:07:2017:17:02:15 pip --version
+  821  08:07:2017:17:06:46 sls deploy -f es_process -r us-east-1 -s dev -v]
+  822  08:07:2017:17:10:12 brew search node
+  823  08:07:2017:17:10:44 brew install node@6
+  824  08:07:2017:17:12:45 npm install
+  825  08:07:2017:17:13:16 pip --version
+  826  08:07:2017:17:13:21 python --version
+  827  08:07:2017:17:13:49 sls deploy -f es_process -r us-east-1 -s dev -v > deploy.log 2>&1
+  828  08:07:2017:17:14:14 npm --version
+  829  08:07:2017:17:14:35 which npm
+  830  08:07:2017:17:14:40 locate npm
+  831  08:07:2017:17:14:53 locate npm | less
+  832  08:07:2017:17:15:02 vi deploy.log 
+  833  08:07:2017:17:16:00 ls
+  834  08:07:2017:17:17:09 vi secrets.dev.yml
+  835  08:07:2017:17:17:17 sls deploy -f es_process -r us-east-1 -s dev -v > deploy.log 2>&1
+  836  08:07:2017:17:17:24 vi deploy.log 
+  837  08:07:2017:17:18:19 export SLS_DEBUG=*
+  838  08:07:2017:17:18:22 sls deploy -f es_process -r us-east-1 -s dev -v > deploy.log 2>&1
+  839  08:07:2017:17:18:30 vi deploy.log 
+  840  08:07:2017:17:20:10 brew unlink node
+  841  08:07:2017:17:20:32 brew link node@6
+  842  08:07:2017:17:20:50 brew link node@6 --force
+  843  08:07:2017:17:21:24 echo 'export PATH="/usr/local/opt/node@6/bin:$PATH"' >> ~/.bash_profile
+  844  08:07:2017:17:21:31 npm --version
+  845  08:07:2017:17:22:12 sls deploy -f es_process -r us-east-1 -s dev -v > deploy.log 2>&1
+  846  08:07:2017:17:22:22 vi deploy.log 
+  847  08:07:2017:17:22:28 npm --version
+  848  08:07:2017:17:24:11 npm -install -g npm@3.10.10
+  849  08:07:2017:17:24:41 npm install -g npm@3.10.10
+  850  08:07:2017:17:26:31 npm install
+  851  08:07:2017:17:26:38 sls deploy -f es_process -r us-east-1 -s dev -v > deploy.log 2>&1
+  852  08:07:2017:17:26:48 vi deploy.log 
+  853  08:07:2017:17:40:59 cd ..
+  854  08:07:2017:17:41:04 unzip ~/Downloads/dynamodb_elasticsearch.zip
+  855  08:07:2017:17:41:08 ls
+  856  08:07:2017:17:41:14 ll
+  857  08:07:2017:17:43:25 mv Users/ymaalo/.virtualenvs/  venv
+  858  08:07:2017:17:43:34 rm Users/ymaalo/
+  859  08:07:2017:17:43:37 drm Users/ymaalo/
+  860  08:07:2017:17:43:38 ls
+  861  08:07:2017:17:43:44 drm Users/
+  862  08:07:2017:17:43:56 source venv/dynamodb_elasticsearch/bin/activate
+  863  08:07:2017:17:43:59 ls
+  864  08:07:2017:17:44:02 cd elasticsearch/
+  865  08:07:2017:17:44:11 npm install
+  866  08:07:2017:17:44:24 sls deploy -f es_process -r us-east-1 -s dev -v 
+  867  08:07:2017:17:44:50 ls
+  868  08:07:2017:17:44:57 cd ../venv/dynamodb_elasticsearch/
+  869  08:07:2017:17:44:58 ls
+  870  08:07:2017:17:45:04 cd ..
+  871  08:07:2017:17:45:08 ls
+  872  08:07:2017:17:45:12 cd ..
+  873  08:07:2017:17:45:13 ls
+  874  08:07:2017:17:49:42 deactivate
+  875  08:07:2017:17:49:43 ls
+  876  08:07:2017:17:49:48 cd ..
+  877  08:07:2017:17:49:50 cd dynamodb-elasticsesarch/
+  878  08:07:2017:17:49:50 ls
+  879  08:07:2017:17:50:03 vi requirements.txt
+  880  08:07:2017:17:50:36 pip install -r requirements.txt 
+  881  08:07:2017:17:51:18 cd requirements.txt 
+  882  08:07:2017:17:51:22 cd elasticsearch/
+  883  08:07:2017:17:51:28 npm install
+  884  08:07:2017:17:51:39 sls deploy -f es_process -r us-east-1 -s dev -v 
+  885  08:07:2017:17:52:52 $ echo "[install]
+  886  08:07:2017:17:53:27 echo "[install] prefix=" > ~/.pydistutils.cfg
+  887  08:07:2017:17:53:38 sls deploy -f es_process -r us-east-1 -s dev -v 
+  888  08:07:2017:18:24:17 brew unlink node
+  889  08:07:2017:18:25:38 rm -rf /usr/local/lib/node_modules
+  890  08:07:2017:18:26:02 brew uninstall node
+  891  08:07:2017:18:26:17 crew prune
+  892  08:07:2017:18:26:22 brew prune
+  893  08:07:2017:18:26:53 brew updae
+  894  08:07:2017:18:26:59 brew update
+  895  08:07:2017:18:27:23 brew install node --without-npm
+  896  07:25:2017:21:24:39 clear
+  897  07:25:2017:21:25:50 wrk
+  898  07:25:2017:21:27:06 cd Stansberry-Terminal-Prototype
+  899  07:26:2017:12:08:21 sshcdf
+  900  07:26:2017:14:55:58 ls
+  901  07:26:2017:14:56:01 cd datafactory/
+  902  07:26:2017:14:56:01 ls
+  903  07:26:2017:14:56:03 cd python/
+  904  07:26:2017:14:56:04 ls
+  905  07:26:2017:14:56:08 cd datafactory/
+  906  07:26:2017:14:56:08 ls
+  907  07:26:2017:14:56:13 cd dynamodb/
+  908  07:26:2017:14:56:14 ls
+  909  07:26:2017:14:56:27 vi dynamodb_quandl_loader.py 
+  910  07:27:2017:10:59:50 git fetch
+  911  07:27:2017:10:59:53 git pull
+  912  07:27:2017:13:34:54 cd ~
+  913  07:27:2017:13:34:57 wrk
+  914  07:27:2017:13:35:00 cd Stansberry-Terminal-Prototype
+  915  07:27:2017:13:35:07 git fetch && git pull
+  916  07:27:2017:13:35:11 cd datafactory/
+  917  07:27:2017:13:35:12 ls
+  918  07:27:2017:13:35:15 cd python/datafactory/
+  919  07:27:2017:13:35:16 ls
+  920  07:27:2017:13:35:19 cd quandl/
+  921  07:27:2017:13:35:19 ls
+  922  07:27:2017:13:36:12 cd../
+  923  07:27:2017:13:36:16 cd ../
+  924  07:27:2017:13:36:18 cd ..
+  925  07:27:2017:13:36:21 cd ../../
+  926  07:27:2017:13:36:23 cd services/
+  927  07:27:2017:13:36:25 cd sbcontent/
+  928  07:27:2017:13:36:26 ls
+  929  07:27:2017:13:36:35 vi sbcontent_dbupdate_manager.py 
+  930  07:27:2017:13:37:27 gitkstree
+  931  07:27:2017:13:37:45 stree
+  932  07:27:2017:13:44:40 ls
+  933  07:27:2017:13:44:49 vi sbcontent_manager.py
+  934  07:27:2017:13:45:09 git add sbcontent_manager.py 
+  935  07:27:2017:13:45:39 git commit -m "add sbcontent_manager.py removed in 7bec0abe0ef424f51328032291d7a7d4e54edaee"
+  936  07:27:2017:13:45:45 git push
+  937  07:27:2017:13:46:01 vi sbcontent_dbupdate_manager.py 
+  938  07:27:2017:13:52:20 vi ../../datafactory/python/datafactory/dynamodb/dynamo_accessor.py 
+  939  07:27:2017:13:52:26 vi sbcontent_dbupdate_manager.py 
+  940  07:27:2017:13:53:17 vi ../../datafactory/python/datafactory/quandl/quandl_query/quandl_query.py 
+  941  07:27:2017:22:42:53 clear
+  942  07:27:2017:22:56:48 git push
+  943  07:27:2017:23:31:28 sshdf
+  944  07:27:2017:23:37:32 git branch -a
+  945  07:27:2017:23:37:44 git checkout origin/dev_start_script
+  946  07:27:2017:23:37:56 vi sbcontent_uitesting_manager.py 
+  947  07:27:2017:23:43:18 cd ..
+  948  07:27:2017:23:43:25 cd ../datafactory/python/datafactory/
+  949  07:27:2017:23:43:26 ls
+  950  07:27:2017:23:43:32 cd etl/
+  951  07:27:2017:23:43:33 ll
+  952  07:27:2017:23:44:07 vi ../../../../services/sbcontent/sbcontent_uitesting_manager.py 
+  953  07:27:2017:23:44:25 vi dynamoETL.py 
+  954  07:28:2017:00:22:07 git checkout dev
+  955  07:28:2017:00:22:10 git fetch
+  956  07:28:2017:00:22:12 git pull
+  957  07:29:2017:22:26:30 vi ~/Documents/tips.txt 
+  958  07:29:2017:22:42:38 sshcdf
+  959  07:29:2017:22:53:46 alias sshcdf
+  960  07:29:2017:23:05:23 sshes 
+  961  07:29:2017:23:42:53 vi ~/Documents/tips.txt 
+  962  07:29:2017:23:43:50 abash 
+  963  07:29:2017:23:43:55 ec2cdf 
+  964  07:30:2017:00:18:27 clear
+  965  07:30:2017:20:19:41 vi ~/.gitconfig 
+  966  07:30:2017:20:30:50 sshcdf
+  967  07:30:2017:20:42:53 vi ~/.bashrc 
+  968  07:30:2017:21:03:13 sshdf
+  969  08:02:2017:17:20:45 vi ~/Documents/tips.txt 
+  970  07:25:2017:21:24:42 clear
+  971  07:25:2017:21:25:44 wrk
+  972  07:25:2017:21:27:32 cd Stansberry-Terminal-Prototype
+  973  07:25:2017:21:29:07 git stash
+  974  07:25:2017:21:29:14 git fetch
+  975  07:25:2017:21:29:18 git pull
+  976  07:25:2017:23:35:49 vi ~/.bashrc 
+  977  07:26:2017:15:14:55 vi ~/.gitconfig 
+  978  07:26:2017:15:16:29 gitk
+  979  07:26:2017:15:16:38 ifconfig
+  980  07:26:2017:15:16:43 ls
+  981  07:26:2017:15:17:26 sudo gitk
+  982  07:27:2017:01:32:55 sshdf
+  983  07:27:2017:22:42:56 clear
+  984  07:27:2017:22:52:39 sshcdf
+  985  07:28:2017:00:28:17 sshdf
+  986  07:29:2017:22:25:13 abash 
+  987  07:29:2017:22:25:15 ec2cdf 
+  988  07:30:2017:00:18:29 clear
+  989  07:30:2017:20:05:18 sshcdf
+  990  08:02:2017:17:09:18 sshdf
+  991  08:07:2017:17:25:16 npm --version
+  992  08:07:2017:17:25:33 npm install
+  993  08:07:2017:17:34:06 wrk
+  994  08:07:2017:17:34:07 ls
+  995  08:07:2017:17:34:21 cd ..
+  996  08:07:2017:17:34:21 ls
+  997  08:07:2017:17:34:25 cd workspace/
+  998  08:07:2017:17:34:26 ls
+  999  08:07:2017:17:34:40 vi ref/commands.txt 
+ 1000  08:07:2017:18:43:45 brew install node --without-npm
+ 1001  08:07:2017:18:58:28 brew install yarn ; mkdir -p /usr/local/npm_packages; sudo chown -R `whoami` /usr/local
+ 1002  08:07:2017:19:02:53 mkdir -p /usr/local/npm_packages; sudo chown -R `whoami` /usr/local
+ 1003  08:07:2017:19:03:03 brew install yarn
+ 1004  08:07:2017:19:03:25 source ~/.bashrc 
+ 1005  08:07:2017:19:03:41 ll ~/.npmrc
+ 1006  08:07:2017:19:04:19 vi ~/.npmrc
+ 1007  08:07:2017:19:04:37 curl -L https://www.npmjs.com/install.sh | sh
+ 1008  08:07:2017:19:05:12 curl -L https://registry.npmjs.org/npm/-/npm-5.2.0.tgz | tar xz ; rm -rf /usr/local/npm_packages/lib/node_modules/npm; mv package /usr/local/npm_packages/lib/node_modules/npm
+ 1009  08:07:2017:19:05:24 npm install -g npm
+ 1010  08:07:2017:19:08:12 npm install -g serverless
+ 1011  08:07:2017:22:29:58 wrk
+ 1012  08:07:2017:22:30:01 cd yonathan/dynamodb-elasticsesarch/
+ 1013  08:07:2017:22:30:02 ls
+ 1014  08:07:2017:22:30:07 drm venv
+ 1015  08:07:2017:22:30:35 cd elasticsearch/
+ 1016  08:07:2017:22:30:53 npm install -g serverless
+ 1017  08:07:2017:22:31:26 pip install -r ../requirements.txt 
+ 1018  08:07:2017:22:31:30 ls
+ 1019  08:07:2017:22:31:35 npm install
+ 1020  08:07:2017:22:32:41 npnpm --version
+ 1021  08:07:2017:22:32:46 npm --version
+ 1022  08:07:2017:22:33:22 node --version
+ 1023  08:07:2017:22:34:26 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1024  08:07:2017:22:36:07 virtualenv -p `which python` venv
+ 1025  08:07:2017:22:36:22 vi ~/Documents/tips.txt 
+ 1026  08:07:2017:22:36:36 python3 -m venv
+ 1027  08:07:2017:22:36:58 python -m venv
+ 1028  08:07:2017:22:37:22 which python
+ 1029  08:07:2017:22:37:26 python --version
+ 1030  08:07:2017:22:38:12 python -m venv ./venv
+ 1031  08:07:2017:22:38:22 source venv/bin/activate
+ 1032  08:07:2017:22:38:35 npm install
+ 1033  08:07:2017:22:38:51 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1034  08:07:2017:22:39:35 npm install serverless-python-requirements
+ 1035  08:07:2017:22:39:45 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1036  08:07:2017:22:40:04 export SLS_DEBUG=*
+ 1037  08:07:2017:22:40:06 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1038  08:07:2017:22:41:46 unalias python
+ 1039  08:07:2017:22:41:50 which python
+ 1040  08:07:2017:22:41:58 unalias pip
+ 1041  08:07:2017:22:42:02 which pip
+ 1042  08:07:2017:22:42:11 npm install serverless-python-requirements
+ 1043  08:07:2017:22:42:24 npm install
+ 1044  08:07:2017:22:42:30 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1045  08:07:2017:22:43:28 npm install --save serverless-python-requirements
+ 1046  08:07:2017:22:43:45 sls deploy
+ 1047  08:07:2017:22:46:22 ls
+ 1048  08:07:2017:22:46:56 vi setup.cfg
+ 1049  08:07:2017:22:47:14 which pip
+ 1050  08:07:2017:22:47:19 rm ~/.pydistutils.cfg 
+ 1051  08:07:2017:22:47:23 sls deploy
+ 1052  08:07:2017:22:48:10 deactivate
+ 1053  08:07:2017:22:48:18 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1054  08:07:2017:22:48:35 npm install --save serverless-python-requirements
+ 1055  08:07:2017:22:48:47 npm install
+ 1056  08:07:2017:22:48:52 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1057  08:07:2017:22:50:19 vi ~/.aws/credentials 
+ 1058  08:07:2017:22:50:29 vi ~/.aws/config 
+ 1059  08:07:2017:22:56:57 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1060  08:07:2017:22:57:42 export AWS_PROFILE=rfoster
+ 1061  08:07:2017:22:57:45 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1062  08:07:2017:22:59:05 vi serverless.yml 
+ 1063  08:07:2017:23:00:59 sls deploy -f es_process -r us-east-1 -s dev -v
+ 1064  08:07:2017:23:02:24 git add setup.cfg 
+ 1065  08:07:2017:23:02:36 stree
+ 1066  08:07:2017:23:04:16 git commit -am "add setup.cfg update dynamodb arn"
+ 1067  08:07:2017:23:04:20 git push
+ 1068  08:07:2017:23:04:42 history > hist.txt
